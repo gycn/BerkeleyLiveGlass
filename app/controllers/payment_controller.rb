@@ -20,7 +20,7 @@ class PaymentController < ApplicationController
         ord = Order.new(name: params[:name],email: params[:email],telephone: params[:telephone],quantity: params[:quantity],delivery: params[:delivery], instructions: params[:instructions], stripeToken: params[:stripeToken])
         
         if ord.save
-          #OrderConfirmation.confirm(params).deliver_later
+          OrderConfirmation.confirm(params).deliver_later
           redirect_to root_path(anchor: 'payment_section'), :flash => { :notice => "You successfully bought " + params[:quantity] + " LiveGlass!" }
         else
 
