@@ -82,7 +82,7 @@ Rails.application.configure do
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
-    :port                 => 587,
+    :port                 => 465,
     :user_name            => "berkeleyliveglass@gmail.com",
     :password             => "IOTAS1000",
     :authentication       => "plain",
