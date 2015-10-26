@@ -1,0 +1,143 @@
+/*
+ Theme Name:   Divi Child
+ Theme URI:    
+ Description:  Divi Child Theme
+ Author:       Gary Chen
+ Author URI:   https://github.com/gycn/
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  divi-child
+*/
+.et_pb_contact_submit
+{
+    color:#ffffff;
+}
+
+.payment-form input, textarea
+{
+     border:none !important; 
+     padding-top:15px !important;
+     padding-bottom:15px !important;
+     padding-left:15px !important;
+     padding-right:15px !important;
+     background-color:#EEE !important;
+     font-family: 'Arial' !important;
+     font-size: 14px !important;
+     width:100% !important;
+}
+
+
+.payment-form textarea
+{
+     width:100%;
+}
+.payment-form select
+{
+     border:none;
+     padding-top:14px;
+     padding-bottom:14px;
+     padding-left:15px;
+     padding-right:15px;
+     background-color:#EEE;
+     font-family: 'Arial';
+     font-size: 14px;
+     margin-bottom:10px;
+}
+
+#credit_info input[id='card_number']
+{
+    width: 46% !important;
+}
+
+#credit_info input
+{
+    width:16.2% !important;
+}
+
+.form_inline:not(#credit_info) {padding-bottom:18px;}
+
+#credit_info {padding-bottom: 25px;}
+
+.form_inline input:not(.shorter)
+{
+     width:24% !important;
+     display:inline-flex;
+}
+
+.form_inline input:not(#order_quantity), .form_inline select 
+{
+     margin-right:1%;
+}
+
+.shorter
+{
+     width: 11.5%;
+}
+
+#order_quantity
+{
+     width:10.6% !important;
+}
+
+#form_submit input
+{
+     background:none !important;
+     font-size:20px !important;
+     font-family:'Arial' !important;
+     color:#ffffff !important;
+     border-radius:3px !important;
+     border:2px solid #ffffff !important;
+     margin-left:15px !important;
+     width:110px !important;
+}
+
+#form_submit
+{
+     float:right;
+     padding-top:10px;
+     display:block;
+
+}
+
+#venmo_button
+{
+     background:none;
+     font-size:20px;
+     font-family:'Arial';
+     color:#ffffff;
+     border-radius:3px;
+     border:2px solid #ffffff;
+     width:110px;
+     padding-top:15px;
+     padding-bottom:15px;
+     padding-left:15px;
+     padding-right:15px;
+     text-align:center;
+}
+
+
+@media screen and (max-width: 980px)
+{
+     
+    #order_quantity
+    {
+          width: 48.7% !important;
+	  margin-bottom:10px;
+    }
+     .form_inline {padding-bottom:0px;}
+     .form_inline input:not(#order_quantity)
+     {
+	  width:100% !important;
+	  margin-bottom:15px;
+          display:block;
+     }
+
+    .form_inline select
+    {
+          width:49%;
+    }
+
+}
