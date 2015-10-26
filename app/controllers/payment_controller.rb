@@ -28,7 +28,7 @@ class PaymentController < ApplicationController
           redirect_to root_path(anchor: 'payment_section'), :flash => { :error => "Error, could not process request. Please try again." }
         end
       rescue Stripe::CardError => e
-        redirect_to root_path(anchor: 'payment_section'), :flash => { :error => "Payment did not go through. " + e }
+        redirect_to root_path(anchor: 'payment_section'), :flash => { :error => "Payment did not go through. " + e.message }
       end
     else
       redirect_to root_path(anchor: 'payment_section'), :flash => { :error => "Missing fields. "}
