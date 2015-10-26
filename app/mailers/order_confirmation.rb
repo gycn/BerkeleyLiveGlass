@@ -1,5 +1,5 @@
 class OrderConfirmation < ApplicationMailer
-  default from: "orders@berkeleyliveglass.me"
+  default from: "berkeleyliveglass@gmail.com"
   def confirm(arg)
     @arg = arg
     mail(to: @arg[:email], subject: 'Berkeley Live Glass Order Confirmation')
