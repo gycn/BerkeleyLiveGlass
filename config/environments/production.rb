@@ -83,8 +83,8 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => 587,
-    :user_name            => Rails.application.secrets.gmail_user,
-    :password             => Rails.application.secrets.gmail_pass,
+    :user_name            => "berkeleyliveglass@gmail.com",
+    :password             => "IOTAS1000",
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
