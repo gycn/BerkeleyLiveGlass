@@ -3,11 +3,41 @@
 <head>
   <title>LiveGlass</title>
   <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+
+  <!--<script>
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_quzeHkGlWTdTO0rjS0MdY0LS',
+      image: ,
+      locale: 'auto',
+      token: function(token) {
+        // Use the token to create the charge with a server-side script.
+        // You can access the token ID with `token.id`
+	alert(token.id);
+      }
+    });
+
+    $('#submit_button').on('click', function(e) {
+      // Open Checkout with further options
+      handler.open({
+        name: 'berkeleyliveglass.me',
+        description: 'purchase',
+        amount: parseInt($('#order_quantity').val())
+      });
+      e.preventDefault();
+    });
+
+    // Close Checkout on page navigation
+    $(window).on('popstate', function() {
+      handler.close();
+    });
+  </script> -->
   <script type="text/javascript">
 	  // This identifies your website in the createToken call below
 	  Stripe.setPublishableKey('pk_live_uBlbxIhCQ4FTFVzl9lAwLhz9');
 	  // ...
   </script>
+  <script type='text/javascript'>
   <script type='text/javascript'>
 /* <![CDATA[ */
 var et_custom = {"ajaxurl":"http:\/\/berkeleyliveglass.me\/wp-admin\/admin-ajax.php","images_uri":"http:\/\/berkeleyliveglass.me\/wp-content\/themes\/Divi\/images","builder_images_uri":"http:\/\/berkeleyliveglass.me\/wp-content\/themes\/Divi\/includes\/builder\/images","et_load_nonce":"d674ee12bc","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","fill":"Fill","field":"field","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","is_builder_plugin_used":""};
