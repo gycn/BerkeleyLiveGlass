@@ -2,10 +2,10 @@ require 'stripe'
 class PaymentController < ApplicationController
   def pay
     if params.has_key?(:name) && params.has_key?(:email) && params.has_key?(:telephone) && params.has_key?(:quantity) &&  params.has_key?(:delivery) &&  params.has_key?(:instructions) && params.has_key?(:stripeToken)
-      Stripe.api_key = 'sk_live_Oq4qMOlOgnUyjniIGa0Xa1Ub'
+      Stripe.api_key = 'sk_test_gEaFjlOfJvnGtpMxejGSf2rw'
       # Get the credit card details submitted by the form
       token = params[:stripeToken]
-      money = params[:quantity].to_i*700
+      money = params[:quantity].to_i*600
       if params[:delivery] == "True"
         money+=100
       end
